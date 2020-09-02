@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const routes = require('./routes');
 
 require('dotenv').config();
 
@@ -13,9 +14,6 @@ mongoose.connect(process.env.MONGODB_URL, {
 });
 
 app.use(express.json());
-
-app.get('/', (req, res) => {
-  res.json({ message: 'Hello World!' });
-});
+app.use(routes);
 
 app.listen(process.env.PORT || 3333);
