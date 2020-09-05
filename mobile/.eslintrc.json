@@ -31,6 +31,7 @@
         "react/no-array-index-key": "off",
         "no-underscore-dangle": "off",
         "react-native/no-raw-text": "off",
-        "no-use-before-define": ["error", { "variables": false }]
+        "no-use-before-define": ["error", { "variables": false }],
+        "import/no-extraneous-dependencies": [0]
     }
 }
