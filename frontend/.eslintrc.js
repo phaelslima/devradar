@@ -30,5 +30,7 @@ module.exports = {
         depth: 3,
       },
     ],
+    camelcase: 'off',
+    'no-underscore-dangle': ['error', { allow: ['_id'] }],
   },
 };
